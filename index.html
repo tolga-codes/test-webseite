@@ -1,18 +1,53 @@
+```html
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine erste Webseite</title>
+
+    <title>Meine Website</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hallo Welt! 👋</h1>
 
-    <p>Das ist meine erste eigene Webseite.</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MeineWebsite</div>
 
-    <button onclick="alert('Du hast geklickt!')">
-        Klick mich!
-    </button>
-</body>
-</html>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#ueber-mich">Über mich</a>
+            <a href="#projekte">Projekte</a>
+        </div>
+    </nav>
+
+
+    <!-- Startbereich -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="kleiner-text">👋 Willkommen auf meiner Website</p>
+
+            <h1>
+                Ich lerne gerade
+                <span>Webentwicklung.</span>
+            </h1>
+
+            <p class="beschreibung">
+                Das ist meine erste eigene Website.
+                Hier probiere ich HTML, CSS und JavaScript aus
+                und baue nach und nach neue Projekte.
+            </p>
+
+            <div class="buttons">
+                <a href="#projekte" class="button">
+                    Meine Projekte
+                </a>
+
+                <a href="#ueber-mich" class="button secondary">
+                    Mehr über mich
+```
