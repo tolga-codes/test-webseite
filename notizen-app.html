@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Notizen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkAuth(); loadNotes()">
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            Meine<span>Website</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="skills.html">Skills</a>
+            <a href="experimente.html">Experimente</a>
+            <a href="notizen-login.html" class="active">Notizen-App</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="app-header">
+            <h2>Willkommen, <span id="display-username" style="color: var(--accent);"></span>!</h2>
+            <button class="button button-outline" onclick="logout()">Logout</button>
+        </div>
+
+        <div class="info-card note-creator">
+            <textarea id="note-input" class="input-field" placeholder="Schreibe eine neue Notiz..." rows="3"></textarea>
+            <button class="button" onclick="addNote()" style="margin-top: 10px;">Notiz speichern</button>
+        </div>
+
+        <div class="card-grid" id="notes-container" style="margin-top: 2rem;">
+            <!-- Notizen werden hier per JavaScript reingeladen -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <strong>MeineWebsite</strong>
+                <p>Meine kleine Website über Webentwicklung.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="ueber-mich.html">Über mich</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="skills.html">Skills</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 MeineWebsite</p>
+    </footer>
+
+    <!-- JS Einbinden -->
+    <script src="app.js"></script>
+</body>
+</html>
