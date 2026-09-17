@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hier das neue Navigations-Menü einfügen -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            Meine<span>Website</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html" class="active">Projekte</a>
+            <a href="skills.html">Skills</a>
+            <a href="experimente.html">Experimente</a>
+            <a href="notizen-login.html">Notizen-App</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
     <header class="hero">
         <div class="hero-content">
             <p class="eyebrow">Meine Arbeit</p>
@@ -15,19 +31,44 @@
             <p class="hero-description">Hier zeige ich, was ich bisher mit HTML, CSS und JS gebaut habe.</p>
         </div>
     </header>
+
     <main class="section">
         <div class="card-grid">
             <article class="info-card">
                 <div class="card-icon">1️⃣</div>
                 <h3>Portfolio Website</h3>
-                <p>Diese Website selbst ist mein erstes großes Projekt.</p>
+                <p>Diese Website selbst ist mein erstes großes Projekt, das alle HTML & CSS Grundlagen vereint.</p>
             </article>
             <article class="info-card">
                 <div class="card-icon">📝</div>
                 <h3>Notizen App</h3>
-                <p>Eine kleine App mit Login-System (siehe oben im Menü).</p>
+                <p>Eine kleine App mit Login-System und Datenspeicherung über JavaScript. (Siehe Navigation)</p>
+            </article>
+            <article class="info-card">
+                <div class="card-icon">🚧</div>
+                <h3>In Arbeit...</h3>
+                <p>Bald folgen hier noch weitere spannende Projekte und Experimente.</p>
             </article>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <strong>MeineWebsite</strong>
+                <p>Meine kleine Website über Webentwicklung.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="ueber-mich.html">Über mich</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="skills.html">Skills</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 MeineWebsite</p>
+    </footer>
+
 </body>
 </html>
