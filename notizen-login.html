@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Notizen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            Meine<span>Website</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="skills.html">Skills</a>
+            <a href="experimente.html">Experimente</a>
+            <a href="notizen-login.html" class="active">Notizen-App</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <main class="section auth-section">
+        <div class="info-card auth-card">
+            <h2>Login / Registrieren</h2>
+            <p style="margin-bottom: 1.5rem;">Lege einen Benutzer an oder logge dich ein.</p>
+            
+            <input type="text" id="username" class="input-field" placeholder="Benutzername">
+            <input type="password" id="password" class="input-field" placeholder="Passwort">
+            
+            <div class="buttons" style="justify-content: center;">
+                <button class="button" onclick="login()">Login</button>
+                <button class="button button-outline" onclick="register()">Registrieren</button>
+            </div>
+            <p id="auth-message" style="margin-top: 15px; color: var(--accent); font-weight: bold;"></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <strong>MeineWebsite</strong>
+                <p>Meine kleine Website über Webentwicklung.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="ueber-mich.html">Über mich</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="skills.html">Skills</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 MeineWebsite</p>
+    </footer>
+
+    <!-- JS Einbinden -->
+    <script src="app.js"></script>
+</body>
+</html>
