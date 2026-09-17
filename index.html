@@ -1,53 +1,45 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Meine Website</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Website | Startseite</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">MeineWebsite</div>
-
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#ueber-mich">Über mich</a>
-            <a href="#projekte">Projekte</a>
-        </div>
-    </nav>
-
-
-    <!-- Startbereich -->
-    <section id="home" class="hero">
-
-        <div class="hero-text">
-
-            <p class="kleiner-text">👋 Willkommen auf meiner Website</p>
-
-            <h1>
-                Ich lerne gerade
-                <span>Webentwicklung.</span>
-            </h1>
-
-            <p class="beschreibung">
-                Das ist meine erste eigene Website.
-                Hier probiere ich HTML, CSS und JavaScript aus
-                und baue nach und nach neue Projekte.
-            </p>
-
-            <div class="buttons">
-                <a href="#projekte" class="button">
-                    Meine Projekte
-                </a>
-
-                <a href="#ueber-mich" class="button secondary">
-                    Mehr über mich
-```
+  <nav>
+    <a class="logo" href="index.html">MeineWebsite</a>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="projekte.html">Projekte</a>
+    </div>
+  </nav>
+  <main class="hero">
+    <div class="hero-text">
+      <p class="kleiner-text">👋 Willkommen auf meiner Website</p>
+      <h1>Ich lerne gerade <span>Webentwicklung.</span></h1>
+      <p class="beschreibung">Das ist meine erste eigene Website. Hier probiere ich HTML, CSS und JavaScript aus und baue nach und nach neue Projekte.</p>
+      <div class="buttons">
+        <a href="projekte.html" class="button">Meine Projekte</a>
+        <a href="ueber-mich.html" class="button secondary">Mehr über mich</a>
+      </div>
+    </div>
+  </main>
+  <section class="section teaser-grid" aria-label="Mehr entdecken">
+    <a class="teaser-card" href="ueber-mich.html">
+      <span class="teaser-icon">👤</span>
+      <h2>Über mich</h2>
+      <p>Lerne mich und meinen Weg in die Webentwicklung kennen.</p>
+      <span class="card-link">Zur Seite →</span>
+    </a>
+    <a class="teaser-card" href="projekte.html">
+      <span class="teaser-icon">💻</span>
+      <h2>Projekte</h2>
+      <p>Sieh dir meine ersten kleinen Webprojekte an.</p>
+      <span class="card-link">Projekte ansehen →</span>
+    </a>
+  </section>
+  <footer>© 2026 MeineWebsite</footer>
+</body>
+</html>
