@@ -48,7 +48,6 @@ Die Website verwendet ein modernes Dark-Mode-Design und bietet nun auch echte Fu
 💾 Persistente Datenspeicherung direkt im Browser via localStorage
 
 📂 Projektstruktur
-Plaintext
 MeineWebsite/
 │
 ├── index.html           # Startseite
